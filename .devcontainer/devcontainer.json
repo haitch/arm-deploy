@@ -1,0 +1,14 @@
+{
+    "image": "nodejs/devcontainer:nightly",
+    "customizations": {
+      "vscode": {
+        "extensions": ["GitHub.vscode-github-actions", "eamodio.gitlens", "christian-kohler.npm-intellisense"]
+      }
+    },
+    "hostRequirements": {
+      "cpus": 4,
+      "memory": "16gb",
+      "storage": "32gb"
+    },
+    "name": "arm-deploy githubAction devcontainer"
+}
