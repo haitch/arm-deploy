@@ -2,7 +2,7 @@
     "image": "nodejs/devcontainer:nightly",
     "customizations": {
       "vscode": {
-        "extensions": ["GitHub.vscode-github-actions", "eamodio.gitlens", "christian-kohler.npm-intellisense"]
+        "extensions": ["GitHub.vscode-github-actions", "eamodio.gitlens", "christian-kohler.npm-intellisense", "GitHub.copilot", "GitHub.copilot-chat", "Orta.vscode-jest"]
       }
     },
     "hostRequirements": {
@@ -10,5 +10,6 @@
       "memory": "16gb",
       "storage": "32gb"
     },
+    "postStartCommand": "/workspaces/arm-deploy/.devcontainer/repo_init.sh",
     "name": "arm-deploy githubAction devcontainer"
 }
