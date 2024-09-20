@@ -122,7 +122,7 @@ jobs:
   
       - name: Token Inspect
         id: tokenInspect
-        uses: haitch/jwtInspector
+        uses: haitch/jwtInspector@v0.1.0
         with:
           token: ${{ steps.idtoken.outputs.id_token }}
   
